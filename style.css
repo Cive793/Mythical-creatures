@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Open+Sans:wght@300;400;500&display=swap");
+
+body {
+  background-image: url(fantasyForestCrop.jpg);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 60px;
+  font-family: "Berkshire Swash";
+  font-size: 40px;
+  color: #127a2d;
+}
+
+label {
+  font-family: "Open Sans", sans-serif;
+}
+
+.form {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formContainer {
+  box-shadow: 4px 3px 19px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  background-color: white;
+
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+
+  display: flex;
+  align-items: center;
+}
+
+#horns {
+  align-self: flex-start;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+select {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-radius: 0px;
+  border: solid gray 2px;
+  height: 35px;
+}
+
+input {
+  height: 25px;
+  border: solid gray 2px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+input:focus {
+  border: solid #127a2d 2px;
+}
+
+button {
+  margin-top: 40px;
+  cursor: pointer;
+  width: 200px;
+  align-self: center;
+  font-family: "Berkshire Swash";
+
+  font-size: 18px;
+  letter-spacing: 2px;
+
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid #127a2d;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #127a2d;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+button:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #127a2d;
+  z-index: -1;
+}
+
+button:hover,
+button:focus {
+  color: white;
+}
+
+button:hover:before,
+button:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+button:active {
+  transform: scale(0.95);
+}
